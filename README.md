@@ -16,3 +16,20 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Deployment
+
+A dockerfile is included, run:
+
+```
+sh build.sh
+```
+
+OR
+
+```
+docker build -t randomusernextjs .
+docker run -p 3000:80 -d randomusernextjs
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
