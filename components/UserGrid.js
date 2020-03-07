@@ -1,3 +1,8 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Spudmash Media Pty Ltd
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
 import React, { useState } from "react";
 import { Avatar, Paper, Grid, Button, Typography } from "@material-ui/core";
 import { v1 as uuidv1 } from "uuid";
