@@ -7,7 +7,7 @@
 
 name="rnduser-nextjs"
 internal_port=80
-public_port=3001
+public_port=3000
 
 docker build -t $name .
 docker run -p $public_port:$internal_port -d $name
