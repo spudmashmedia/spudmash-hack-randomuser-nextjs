@@ -13,7 +13,7 @@ import dataFetcher from "../common/dataFetcher";
 import CommonLayoutHoc from "../components/CommonLayoutHoc";
 import UserGrid from "../components/UserGrid";
 import useSWR from "swr";
-import Error from "../components/Error";
+import Error from "../components/ErrorWidget";
 import randomuser from "../common/randomuser";
 
 const useStyles = makeStyles(theme => ({
@@ -47,13 +47,16 @@ function Home() {
   let renderGridComponent;
 
   if (error) {
-    renderGridComponent = <Error message={"dataFetcher"} />;
+    renderGridComponent = (
+      <Error message={"Something went wrong with the dataFetcher"} />
+    );
   } else if (!data) {
     renderGridComponent = <UserGrid isLoading={true} />;
   } else {
     // So... data has finally loaded, lets process it:
     const users = new randomuser(data);
     let userData = users.get();
+    console.log(JSON.stringify(userData, null, 2));
 
     renderGridComponent = <UserGrid data={userData} isLoading={false} />;
   }
@@ -85,7 +88,8 @@ function Home() {
           {renderGridComponent}
         </Grid>
       </Grid>
-    </div>
+    </div>,
+    { title: "RANDOM USER TESTHARNESS" }
   );
 }
 

@@ -4,16 +4,11 @@
  *--------------------------------------------------------------------------------------------*/
 
 import React, { useState } from "react";
-import {
-  Paper,
-  ListItem,
-  ListItemIcon,
-  ListItemText
-} from "@material-ui/core";
+import { Paper, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import ErrorIcon from "@material-ui/icons/Error";
 
-let Loading = props => {
-  let errorMessage = `Something went wrong with ${props.message}`;
+let ErrorWidget = props => {
+  let errorMessage = `${props.message}`;
   return (
     <Paper>
       <ListItem>
@@ -26,4 +21,4 @@ let Loading = props => {
   );
 };
 
-export default Loading;
+export default ErrorWidget;

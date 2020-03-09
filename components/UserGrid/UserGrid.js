@@ -4,17 +4,9 @@
  *--------------------------------------------------------------------------------------------*/
 
 import React, { useState } from "react";
-import {
-  Avatar,
-  Paper,
-  Grid,
-  Button,
-  Typography,
-  Popover
-} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Avatar, Paper, Grid, Button, Typography } from "@material-ui/core";
 import { v1 as uuidv1 } from "uuid";
-import Loading from "./Loading";
+import LoadingWidget from "../LoadingWidget";
 
 let profileClicked = (profile, e) => {
   e.preventDefault();
@@ -40,7 +32,7 @@ let UserGrid = props => {
         alignItems="center"
       >
         <Grid item>
-          <Loading text={"Something is loading"} />
+          <LoadingWidget text={"Something is loading"} />
         </Grid>
         <Grid item>
           <Typography>Loading...</Typography>

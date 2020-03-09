@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "storybook": "start-storybook"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.5",
@@ -16,5 +17,11 @@
     "react-dom": "16.13.0",
     "swr": "^0.1.18",
     "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@storybook/addon-a11y": "^5.3.14",
+    "@storybook/react": "^5.3.14",
+    "babel-loader": "^8.0.6"
   }
 }

@@ -3,6 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
+import React from "react";
 import { Container, AppBar, Typography, Toolbar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -14,14 +15,19 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-let CommonLayoutHoc = props => {
+let CommonLayoutHoc = (props, opts) => {
   const classes = useStyles();
+
+  let title = "";
+  if (opts) {
+    title = opts.title;
+  }
 
   return (
     <div>
       <AppBar>
         <Toolbar>
-          <Typography variant="h6">RANDOM USER TESTHARNESS</Typography>
+          <Typography variant="h6">{title}</Typography>
         </Toolbar>
       </AppBar>
       <Toolbar />

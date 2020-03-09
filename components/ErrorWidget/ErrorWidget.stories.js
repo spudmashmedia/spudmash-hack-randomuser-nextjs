@@ -3,15 +3,15 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import React, { useState } from "react";
-import { Paper, CircularProgress, Typography } from "@material-ui/core";
+import React from "react";
+import ErrorWidget from "./ErrorWidget";
 
-let Loading = props => {
-  return (
-    <Paper>
-      <CircularProgress />
-    </Paper>
-  );
+export default {
+  component: ErrorWidget,
+  title: "ErrorWidget",
+  excludeStories: /.*Data$/
 };
 
-export default Loading;
+export const actionData = "Something went wrong";
+
+export const Default = () => <ErrorWidget message={actionData} />;
