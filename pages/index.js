@@ -101,7 +101,7 @@ function Home() {
                 noValidate
                 autoComplete="off"
               >
-                <InputLabel htmlFor="filled-gender">Gender</InputLabel>
+                <InputLabel>Gender</InputLabel>
                 <Select
                   native
                   value={gender}
@@ -112,7 +112,9 @@ function Home() {
                   }}
                 >
                   {constants.gender.map(x => (
-                    <option value={x.id}>{x.label}</option>
+                    <option key={x.id} value={x.id}>
+                      {x.label}
+                    </option>
                   ))}
                 </Select>
               </FormControl>
@@ -121,7 +123,7 @@ function Home() {
                 noValidate
                 autoComplete="off"
               >
-                <InputLabel htmlFor="filled-country">Country</InputLabel>
+                <InputLabel>Country</InputLabel>
                 <Select
                   native
                   value={country}
@@ -132,7 +134,9 @@ function Home() {
                   }}
                 >
                   {constants.countryCodes.map(x => (
-                    <option value={x.id}>{x.label}</option>
+                    <option key={x.id} value={x.id}>
+                      {x.label}
+                    </option>
                   ))}
                 </Select>
               </FormControl>
