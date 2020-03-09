@@ -19,14 +19,13 @@ let CommonLayoutHoc = props => {
 
   return (
     <div>
-      <Container fixed>
-        <AppBar>
-          <Toolbar>
-            <Typography variant="h6">RANDOM USER TESTHARNESS</Typography>
-          </Toolbar>
-        </AppBar>
-        {props}
-      </Container>
+      <AppBar>
+        <Toolbar>
+          <Typography variant="h6">RANDOM USER TESTHARNESS</Typography>
+        </Toolbar>
+      </AppBar>
+      <Toolbar />
+      <Container>{props}</Container>
     </div>
   );
 };

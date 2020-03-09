@@ -4,7 +4,14 @@
  *--------------------------------------------------------------------------------------------*/
 
 import React, { useState } from "react";
-import { Avatar, Paper, Grid, Button, Typography } from "@material-ui/core";
+import {
+  Avatar,
+  Paper,
+  Grid,
+  Button,
+  Typography,
+  Popover
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { v1 as uuidv1 } from "uuid";
 import Loading from "./Loading";
@@ -45,12 +52,12 @@ let UserGrid = props => {
     <Paper elevation={3}>
       <Grid container justify="center" spacing={1}>
         {userData.map(userItem => (
-          <Grid key={uuidv1()} item>
+          <Grid key={`${userItem.id}-${uuidv1()}`} item>
             <Button
               onClick={e => profileClicked(userItem, e)}
               onMouseOver={e => profileHover(userItem, e)}
             >
-              <Avatar alt={userItem.name} src={userItem.thumbnail} />
+              <Avatar alt={userItem.name} src={userItem.image_thumb} />
             </Button>
           </Grid>
         ))}
