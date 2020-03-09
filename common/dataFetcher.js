@@ -3,10 +3,10 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as constants from "./constants";
+import randomuser from "./randomuser";
 
 let dataFetcher = async path => {
-  const res = await fetch(`${constants.API_URL}${path}`);
+  const res = await fetch(`${randomuser.getHost()}${path}`);
   const js = await res.json();
   return js;
 };

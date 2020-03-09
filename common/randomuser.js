@@ -3,10 +3,21 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
+const API_URL = "https://randomuser.me/api/1.3";
+
 // TODO: PORT THIS TO RUST WASM....
 export default class randomuser {
   constructor(data) {
     this.data = data;
+  }
+
+  static getHost() {
+    return API_URL;
+  }
+
+  static formatPath(args) {
+    const { count, gender, nat } = args;
+    return `/?results=${count}&gender=${gender}&nat=${nat}`;
   }
 
   get() {

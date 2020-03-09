@@ -6,7 +6,17 @@
 import React, { useState } from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { Slider, Card, CardContent, Grid, Typography } from "@material-ui/core";
+import {
+  Slider,
+  Card,
+  CardContent,
+  Container,
+  Grid,
+  Typography,
+  FormControl,
+  InputLabel,
+  Select
+} from "@material-ui/core";
 
 import * as constants from "../common/constants";
 import dataFetcher from "../common/dataFetcher";
@@ -26,6 +36,10 @@ const useStyles = makeStyles(theme => ({
   paper: {
     elevation: 3
   },
+  formcontrol: {
+    margin: theme.spacing(1),
+    width: 200
+  },
   control: theme.spacing(2)
 }));
 
@@ -37,12 +51,29 @@ function Home() {
   const maxCount = 1000;
   const steps = 50;
 
+  // register hooks
   const [count, setCount] = useState(minCount);
+  const [gender, setGender] = useState(constants.gender.map(x => x.id)[0]);
+  const [country, setCountry] = useState(
+    constants.countryCodes.map(x => x.id)[0]
+  );
+
   let handleUserCountChange = (event, newValue) => {
     setCount(newValue);
   };
 
-  const { data, error } = useSWR(`/?results=${count}`, dataFetcher);
+  let handleGenderChange = (event, newValue) => {
+    setGender(newValue);
+  };
+
+  let handleCountryChange = (event, newValue) => {
+    setCountry(newValue);
+  };
+
+  const { data, error } = useSWR(
+    randomuser.formatPath({ count: count, gender: gender, nat: country }),
+    dataFetcher
+  );
 
   let renderGridComponent;
 
@@ -56,14 +87,58 @@ function Home() {
     // So... data has finally loaded, lets process it:
     const users = new randomuser(data);
     let userData = users.get();
-    console.log(JSON.stringify(userData, null, 2));
-
     renderGridComponent = <UserGrid data={userData} isLoading={false} />;
   }
 
   return CommonLayoutHoc(
     <div>
-      <Grid container className={classes.root} spacing={2} direction="column">
+      <Grid container className={classes.root} spacing={2}>
+        <Grid item xs={12}>
+          <Card>
+            <CardContent>
+              <FormControl
+                className={classes.formcontrol}
+                noValidate
+                autoComplete="off"
+              >
+                <InputLabel htmlFor="filled-gender">Gender</InputLabel>
+                <Select
+                  native
+                  value={gender}
+                  onChange={e => handleGenderChange(e, e.target.value)}
+                  inputProps={{
+                    name: "gender",
+                    id: "gender-select"
+                  }}
+                >
+                  {constants.gender.map(x => (
+                    <option value={x.id}>{x.label}</option>
+                  ))}
+                </Select>
+              </FormControl>
+              <FormControl
+                className={classes.formcontrol}
+                noValidate
+                autoComplete="off"
+              >
+                <InputLabel htmlFor="filled-country">Country</InputLabel>
+                <Select
+                  native
+                  value={country}
+                  onChange={e => handleCountryChange(e, e.target.value)}
+                  inputProps={{
+                    name: "country",
+                    id: "country-select"
+                  }}
+                >
+                  {constants.countryCodes.map(x => (
+                    <option value={x.id}>{x.label}</option>
+                  ))}
+                </Select>
+              </FormControl>
+            </CardContent>
+          </Card>
+        </Grid>
         <Grid item xs={12}>
           <Card>
             <CardContent>
