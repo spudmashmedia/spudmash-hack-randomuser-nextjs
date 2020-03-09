@@ -4,29 +4,17 @@
 //  *--------------------------------------------------------------------------------------------*/
 
 // import React, { useState } from "react";
-// import {
-//   Typography,
-//   Paper,
-//   Grid,
-//   CircularProgress,
-//   Card,
-//   CardHeader,
-//   CardContent,
-//   CardMedia
-// } from "@material-ui/core";
-
+// import { Typography, Card, CardActionArea, CardMedia } from "@material-ui/core";
 
 // let Profile = (props, styles) => {
-//     const classes = styles;
-// return(
+//   const classes = styles;
+//   return (
 //     <Card>
-//         <CardActionArea>
-//             <CardMedia 
-//                 className= {classes}
-//             />
-//         </CardActionArea>
+//       <CardActionArea>
+//         <CardMedia className={classes} />
+//       </CardActionArea>
 //     </Card>
-// )
-// }
+//   );
+// };
 
 // export default Profile;

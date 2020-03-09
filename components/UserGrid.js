@@ -5,9 +5,19 @@
 
 import React, { useState } from "react";
 import { Avatar, Paper, Grid, Button, Typography } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 import { v1 as uuidv1 } from "uuid";
 import Loading from "./Loading";
-import * as constants from "../common/constants";
+
+let profileClicked = (profile, e) => {
+  e.preventDefault();
+  console.log(`button clicked\nProfile: {}`, JSON.stringify(profile, null, 2));
+};
+
+let profileHover = (profile, e) => {
+  e.preventDefault();
+  console.log(`button hover\nProfile: {}`, JSON.stringify(profile, null, 2));
+};
 
 let UserGrid = props => {
   const userData = props.data;
@@ -36,7 +46,10 @@ let UserGrid = props => {
       <Grid container justify="center" spacing={1}>
         {userData.map(userItem => (
           <Grid key={uuidv1()} item>
-            <Button>
+            <Button
+              onClick={e => profileClicked(userItem, e)}
+              onMouseOver={e => profileHover(userItem, e)}
+            >
               <Avatar alt={userItem.name} src={userItem.thumbnail} />
             </Button>
           </Grid>

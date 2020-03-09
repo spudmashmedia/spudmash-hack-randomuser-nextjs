@@ -12,8 +12,9 @@ import * as constants from "../common/constants";
 import dataFetcher from "../common/dataFetcher";
 import CommonLayoutHoc from "../components/CommonLayoutHoc";
 import UserGrid from "../components/UserGrid";
-import getData from "../common/dataFetcher";
 import useSWR from "swr";
+import Error from "../components/Error";
+import randomuser from "../common/randomuser";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -46,20 +47,13 @@ function Home() {
   let renderGridComponent;
 
   if (error) {
-    console.trace("error occurred {}", error);
-    renderGridComponent = <UserGrid isLoading={true} />;
-  }
-  if (!data) {
-    console.trace("waiting for data");
+    renderGridComponent = <Error message={"dataFetcher"} />;
+  } else if (!data) {
     renderGridComponent = <UserGrid isLoading={true} />;
   } else {
     // So... data has finally loaded, lets process it:
-    console.trace("got data: {}", data);
-
-    let userData = data.results.map(user => ({
-      name: `${user.name.first} ${user.name.last}`,
-      thumbnail: user.picture.thumbnail
-    }));
+    const users = new randomuser(data);
+    let userData = users.get();
 
     renderGridComponent = <UserGrid data={userData} isLoading={false} />;
   }
