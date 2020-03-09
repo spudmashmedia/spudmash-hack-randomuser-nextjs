@@ -6,19 +6,21 @@
 import { Container, AppBar, Typography, Toolbar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   appbar: {
-    color: "white",
-    background: "black"
+    position: "fixed",
+    bottom: theme.spacing(2),
+    right: theme.spacing(2)
   }
-});
+}));
 
 let CommonLayoutHoc = props => {
   const classes = useStyles();
+
   return (
     <div>
       <Container fixed>
-        <AppBar position="static" className={classes.appbar}>
+        <AppBar>
           <Toolbar>
             <Typography variant="h6">RANDOM USER TESTHARNESS</Typography>
           </Toolbar>

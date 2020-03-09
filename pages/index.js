@@ -9,8 +9,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Slider, Card, CardContent, Grid, Typography } from "@material-ui/core";
 
 import * as constants from "../common/constants";
+import dataFetcher from "../common/dataFetcher";
 import CommonLayoutHoc from "../components/CommonLayoutHoc";
 import UserGrid from "../components/UserGrid";
+import getData from "../common/dataFetcher";
+import useSWR from "swr";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -34,12 +37,32 @@ function Home() {
   const steps = 50;
 
   const [count, setCount] = useState(minCount);
-
   let handleUserCountChange = (event, newValue) => {
     setCount(newValue);
   };
 
-  console.log(`${minCount} ${maxCount}`);
+  const { data, error } = useSWR(`/?results=${count}`, dataFetcher);
+
+  let renderGridComponent;
+
+  if (error) {
+    console.trace("error occurred {}", error);
+    renderGridComponent = <UserGrid isLoading={true} />;
+  }
+  if (!data) {
+    console.trace("waiting for data");
+    renderGridComponent = <UserGrid isLoading={true} />;
+  } else {
+    // So... data has finally loaded, lets process it:
+    console.trace("got data: {}", data);
+
+    let userData = data.results.map(user => ({
+      name: `${user.name.first} ${user.name.last}`,
+      thumbnail: user.picture.thumbnail
+    }));
+
+    renderGridComponent = <UserGrid data={userData} isLoading={false} />;
+  }
 
   return CommonLayoutHoc(
     <div>
@@ -65,7 +88,7 @@ function Home() {
           </Card>
         </Grid>
         <Grid item xs={12}>
-          <UserGrid count={count} styles={classes} />
+          {renderGridComponent}
         </Grid>
       </Grid>
     </div>

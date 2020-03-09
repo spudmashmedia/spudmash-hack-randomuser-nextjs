@@ -39,10 +39,6 @@ export const marks = [
     label: "400"
   },
   {
-    value: 400,
-    label: "400"
-  },
-  {
     value: 450,
     label: "450"
   },
