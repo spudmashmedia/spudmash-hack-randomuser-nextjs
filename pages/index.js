@@ -25,6 +25,7 @@ import UserGrid from "../components/UserGrid";
 import useSWR from "swr";
 import Error from "../components/ErrorWidget";
 import randomuser from "../common/randomuser";
+import Dropdown from "../components/Dropdown";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -36,7 +37,7 @@ const useStyles = makeStyles(theme => ({
   paper: {
     elevation: 3
   },
-  formcontrol: {
+  dropdown: {
     margin: theme.spacing(1),
     width: 200
   },
@@ -96,50 +97,20 @@ function Home() {
         <Grid item xs={12}>
           <Card>
             <CardContent>
-              <FormControl
-                className={classes.formcontrol}
-                noValidate
-                autoComplete="off"
-              >
-                <InputLabel>Gender</InputLabel>
-                <Select
-                  native
-                  value={gender}
-                  onChange={e => handleGenderChange(e, e.target.value)}
-                  inputProps={{
-                    name: "gender",
-                    id: "gender-select"
-                  }}
-                >
-                  {constants.gender.map(x => (
-                    <option key={x.id} value={x.id}>
-                      {x.label}
-                    </option>
-                  ))}
-                </Select>
-              </FormControl>
-              <FormControl
-                className={classes.formcontrol}
-                noValidate
-                autoComplete="off"
-              >
-                <InputLabel>Country</InputLabel>
-                <Select
-                  native
-                  value={country}
-                  onChange={e => handleCountryChange(e, e.target.value)}
-                  inputProps={{
-                    name: "country",
-                    id: "country-select"
-                  }}
-                >
-                  {constants.countryCodes.map(x => (
-                    <option key={x.id} value={x.id}>
-                      {x.label}
-                    </option>
-                  ))}
-                </Select>
-              </FormControl>
+              <Dropdown
+                name="gender-select"
+                label="Gender"
+                data={constants.gender}
+                onChangeHandler={handleGenderChange}
+                className={classes.dropdown}
+              />
+              <Dropdown
+                name="country-select"
+                label="Country"
+                data={constants.countryCodes}
+                onChangeHandler={handleCountryChange}
+                className={classes.dropdown}
+              />
             </CardContent>
           </Card>
         </Grid>
