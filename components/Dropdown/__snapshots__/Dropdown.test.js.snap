@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorWidget Component Snapshot Test renders correctly 1`] = `
+<div
+  autoComplete="off"
+  className="MuiFormControl-root makeStyles-formcontrol-1"
+  noValidate={true}
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+  >
+    Test Dropdown
+  </label>
+  <div
+    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+    onClick={[Function]}
+  >
+    <select
+      aria-invalid={false}
+      className="MuiSelect-root MuiSelect-select MuiInputBase-input MuiInput-input"
+      disabled={false}
+      multiple={false}
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+    >
+      <option
+        value="male"
+      >
+        Male
+      </option>
+      <option
+        value="female"
+      >
+        Female
+      </option>
+    </select>
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root MuiSelect-icon"
+      focusable="false"
+      role="presentation"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+  </div>
+</div>
+`;
