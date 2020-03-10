@@ -3,12 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "next export",
-    "storybook": "start-storybook",
-    "test": "jest"
+    "dev": "export NODE_ENV=dev && next dev",
+    "build": "export NODE_ENV=production && next build",
+    "start": "export NODE_ENV=production && next start",
+    "export": "export NODE_ENV=production && next export",
+    "storybook": "export NODE_ENV=dev && start-storybook",
+    "test": "export NODE_ENV=test && jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "!node_modules/react-runtime"
+    ]
   },
   "dependencies": {
     "@material-ui/core": "^4.9.5",

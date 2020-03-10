@@ -1,0 +1,17 @@
+{
+  "env": {
+    "dev": {
+      "presets": ["next/babel"],
+      "plugins": []
+    },
+    "test": {
+      "presets": ["@babel/preset-env", "@babel/preset-react"],
+      "plugins": [],
+      "only": ["./**/*.js", "node_modules/jest-runtime"]
+    },
+    "production": {
+      "presets": ["next/babel"],
+      "plugins": []
+    }
+  }
+}
