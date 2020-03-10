@@ -5,10 +5,10 @@
 
 import randomuser from "./randomuser";
 
-let dataFetcher = async path => {
+async function dataFetcher(path) {
   const res = await fetch(`${randomuser.getHost()}${path}`);
   const js = await res.json();
   return js;
-};
+}
 
 export default dataFetcher;

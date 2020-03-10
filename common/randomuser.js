@@ -16,6 +16,9 @@ export default class randomuser {
   }
 
   static formatPath(args) {
+    if (!args) {
+      return `/`;
+    }
     const { count, gender, nat } = args;
     return `/?results=${count}&gender=${gender}&nat=${nat}`;
   }

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "test": "jest"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.5",
@@ -20,8 +21,13 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
     "@storybook/addon-a11y": "^5.3.14",
     "@storybook/react": "^5.3.14",
-    "babel-loader": "^8.0.6"
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "jest": "^25.1.0",
+    "react-test-renderer": "^16.13.0"
   }
 }
