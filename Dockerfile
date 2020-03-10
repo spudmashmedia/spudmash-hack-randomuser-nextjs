@@ -9,8 +9,8 @@
 FROM node:10.13-alpine as packages
 ENV NODE_ENV production
 WORKDIR /usr/src/app
-COPY ["package.json", "package-lock.json", "./"]
-RUN npm install
+COPY ["package.json", ".babelrc", "yarn.lock", "./"]
+RUN yarn install
 
 #
 # Seperate build stage for static output
@@ -23,9 +23,11 @@ COPY components ./components
 COPY pages ./pages 
 COPY public ./public
 COPY package.json ./
+COPY yarn.lock ./
+COPY .babelrc ./
 COPY --from=packages /usr/src/app/node_modules ./node_modules
-RUN npm run build \
-    && npm run export
+RUN yarn build \
+    && yarn export
 
 #
 # Copy out folder from builder and host with nginx
