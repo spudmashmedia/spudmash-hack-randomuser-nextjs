@@ -5,20 +5,18 @@
 After cloning, run:
 
 ```
-npm install
+yarn install
 ```
 
 To run the development server:
 
-```bash
-npm run dev
-# or
+```
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Deployment
+## Build + Deployment
 
 A dockerfile is included, run:
 
@@ -48,3 +46,12 @@ This will fire off
 ```
 yarn test
 ```
+
+## Open Storybook Component Library
+
+Storybook Component Library
+
+```
+yarn storybook
+```
+
