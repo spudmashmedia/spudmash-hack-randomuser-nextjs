@@ -2,7 +2,8 @@
 
 ## Getting Started
 
-After cloning, run: 
+After cloning, run:
+
 ```
 npm install
 ```
@@ -33,3 +34,17 @@ docker run -p 3000:80 -d randomusernextjs
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Run Tests
+
+Using Jest testing framework.
+
+This will fire off
+
+- unit tests
+- snapshot tests
+- TODO: integration test
+
+```
+yarn test
+```
