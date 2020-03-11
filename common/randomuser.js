@@ -27,6 +27,8 @@ export default class randomuser {
     return this.data.results.map(user => ({
       id: user.id.value,
       name: `${user.name.first} ${user.name.last}`,
+      username: user.login.username,
+      password: user.login.password,
       email: user.email,
       phone: user.phone,
       location: `${user.location.city}, ${user.location.state} ${user.location.country}`,

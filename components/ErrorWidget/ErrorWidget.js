@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import React, { useState } from "react";
+import React from "react";
 import { Paper, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import ErrorIcon from "@material-ui/icons/Error";
 

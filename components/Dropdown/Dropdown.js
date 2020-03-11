@@ -1,7 +1,11 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Spudmash Media Pty Ltd
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
 import React from "react";
 import { FormControl, InputLabel, Select } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { v1 as uuidv1 } from "uuid";
 
 let useStyles = makeStyles(theme => ({
   formcontrol: {
@@ -19,10 +23,7 @@ let Dropdown = props => {
   return (
     <FormControl className={classes.formcontrol} noValidate autoComplete="off">
       <InputLabel>{label}</InputLabel>
-      <Select
-        native
-        onChange={e => onChangeHandler(e, e.target.value)}
-      >
+      <Select native onChange={e => onChangeHandler(e, e.target.value)}>
         {data.map(x => (
           <option key={x.id} value={x.id}>
             {x.label}

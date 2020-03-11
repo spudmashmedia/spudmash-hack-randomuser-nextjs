@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile Component Snapshot Test renders correctly 1`] = `
+<div>
+  <button
+    aria-controls={null}
+    aria-haspopup={true}
+    className="MuiButtonBase-root MuiButton-root MuiButton-text"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circle"
+      >
+        <img
+          alt="Marc Van Breemen"
+          className="MuiAvatar-img"
+          src="https://randomuser.me/api/portraits/thumb/men/65.jpg"
+        />
+      </div>
+    </span>
+  </button>
+</div>
+`;

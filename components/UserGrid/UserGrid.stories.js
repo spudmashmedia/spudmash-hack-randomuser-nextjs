@@ -16,6 +16,8 @@ export const actionData = [
   {
     id: "15667689-X",
     name: "Angela Moya",
+    username: "username",
+    password: "password",
     email: "angela.moya@example.com",
     phone: "929-044-312",
     location: "Orihuela, Canarias Spain",
@@ -26,6 +28,8 @@ export const actionData = [
   {
     id: "2NNaN36732140 24",
     name: "Ambre Deschamps",
+    username: "username",
+    password: "password",
     email: "ambre.deschamps@example.com",
     phone: "03-81-45-45-60",
     location: "Aubervilliers, Guyane France",
@@ -36,6 +40,8 @@ export const actionData = [
   {
     id: "991228915",
     name: "Andrew Young",
+    username: "username",
+    password: "password",
     email: "andrew.young@example.com",
     phone: "03-1017-9496",
     location: "Australian Capital Territory, New South Wales Australia",
@@ -46,6 +52,8 @@ export const actionData = [
   {
     id: "64857192-J",
     name: "Miguel Nieto",
+    username: "username",
+    password: "password",
     email: "miguel.nieto@example.com",
     phone: "950-858-588",
     location: "Lorca, Región de Murcia Spain",
@@ -56,6 +64,8 @@ export const actionData = [
   {
     id: "77116352",
     name: "Marc Van Breemen",
+    username: "username",
+    password: "password",
     email: "marc.vanbreemen@example.com",
     phone: "(724)-143-6221",
     location: "Rijsoord, Drenthe Netherlands",
@@ -66,6 +76,8 @@ export const actionData = [
   {
     id: "00000001",
     name: "Not A Real Guy",
+    username: "username",
+    password: "password",
     email: "not.a.real@guy.com",
     phone: "+61414000111",
     location: "Sydney, NSW Australia",

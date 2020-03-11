@@ -59,230 +59,248 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
     <div
       className="MuiGrid-root MuiGrid-item"
     >
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-text"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
+      <div>
+        <button
+          aria-controls={null}
+          aria-haspopup={true}
+          className="MuiButtonBase-root MuiButton-root MuiButton-text"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
         >
-          <div
-            className="MuiAvatar-root MuiAvatar-circle"
+          <span
+            className="MuiButton-label"
           >
-            <img
-              alt="Angela Moya"
-              className="MuiAvatar-img"
-              src="https://randomuser.me/api/portraits/thumb/women/73.jpg"
-            />
-          </div>
-        </span>
-      </button>
-    </div>
-    <div
-      className="MuiGrid-root MuiGrid-item"
-    >
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-text"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
-        >
-          <div
-            className="MuiAvatar-root MuiAvatar-circle"
-          >
-            <img
-              alt="Ambre Deschamps"
-              className="MuiAvatar-img"
-              src="https://randomuser.me/api/portraits/thumb/women/72.jpg"
-            />
-          </div>
-        </span>
-      </button>
-    </div>
-    <div
-      className="MuiGrid-root MuiGrid-item"
-    >
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-text"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
-        >
-          <div
-            className="MuiAvatar-root MuiAvatar-circle"
-          >
-            <img
-              alt="Andrew Young"
-              className="MuiAvatar-img"
-              src="https://randomuser.me/api/portraits/thumb/men/92.jpg"
-            />
-          </div>
-        </span>
-      </button>
-    </div>
-    <div
-      className="MuiGrid-root MuiGrid-item"
-    >
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-text"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
-        >
-          <div
-            className="MuiAvatar-root MuiAvatar-circle"
-          >
-            <img
-              alt="Miguel Nieto"
-              className="MuiAvatar-img"
-              src="https://randomuser.me/api/portraits/thumb/men/20.jpg"
-            />
-          </div>
-        </span>
-      </button>
-    </div>
-    <div
-      className="MuiGrid-root MuiGrid-item"
-    >
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-text"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
-        >
-          <div
-            className="MuiAvatar-root MuiAvatar-circle"
-          >
-            <img
-              alt="Marc Van Breemen"
-              className="MuiAvatar-img"
-              src="https://randomuser.me/api/portraits/thumb/men/65.jpg"
-            />
-          </div>
-        </span>
-      </button>
-    </div>
-    <div
-      className="MuiGrid-root MuiGrid-item"
-    >
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-text"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
-        >
-          <div
-            className="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
-          >
-            <svg
-              aria-hidden="true"
-              className="MuiSvgIcon-root MuiAvatar-fallback"
-              focusable="false"
-              role="presentation"
-              viewBox="0 0 24 24"
+            <div
+              className="MuiAvatar-root MuiAvatar-circle"
             >
-              <path
-                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              <img
+                alt="Angela Moya"
+                className="MuiAvatar-img"
+                src="https://randomuser.me/api/portraits/thumb/women/73.jpg"
               />
-            </svg>
-          </div>
-        </span>
-      </button>
+            </div>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item"
+    >
+      <div>
+        <button
+          aria-controls={null}
+          aria-haspopup={true}
+          className="MuiButtonBase-root MuiButton-root MuiButton-text"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <div
+              className="MuiAvatar-root MuiAvatar-circle"
+            >
+              <img
+                alt="Ambre Deschamps"
+                className="MuiAvatar-img"
+                src="https://randomuser.me/api/portraits/thumb/women/72.jpg"
+              />
+            </div>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item"
+    >
+      <div>
+        <button
+          aria-controls={null}
+          aria-haspopup={true}
+          className="MuiButtonBase-root MuiButton-root MuiButton-text"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <div
+              className="MuiAvatar-root MuiAvatar-circle"
+            >
+              <img
+                alt="Andrew Young"
+                className="MuiAvatar-img"
+                src="https://randomuser.me/api/portraits/thumb/men/92.jpg"
+              />
+            </div>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item"
+    >
+      <div>
+        <button
+          aria-controls={null}
+          aria-haspopup={true}
+          className="MuiButtonBase-root MuiButton-root MuiButton-text"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <div
+              className="MuiAvatar-root MuiAvatar-circle"
+            >
+              <img
+                alt="Miguel Nieto"
+                className="MuiAvatar-img"
+                src="https://randomuser.me/api/portraits/thumb/men/20.jpg"
+              />
+            </div>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item"
+    >
+      <div>
+        <button
+          aria-controls={null}
+          aria-haspopup={true}
+          className="MuiButtonBase-root MuiButton-root MuiButton-text"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <div
+              className="MuiAvatar-root MuiAvatar-circle"
+            >
+              <img
+                alt="Marc Van Breemen"
+                className="MuiAvatar-img"
+                src="https://randomuser.me/api/portraits/thumb/men/65.jpg"
+              />
+            </div>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item"
+    >
+      <div>
+        <button
+          aria-controls={null}
+          aria-haspopup={true}
+          className="MuiButtonBase-root MuiButton-root MuiButton-text"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <div
+              className="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiAvatar-fallback"
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                />
+              </svg>
+            </div>
+          </span>
+        </button>
+      </div>
     </div>
   </div>
 </div>

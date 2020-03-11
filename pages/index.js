@@ -6,17 +6,7 @@
 import React, { useState } from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  Slider,
-  Card,
-  CardContent,
-  Container,
-  Grid,
-  Typography,
-  FormControl,
-  InputLabel,
-  Select
-} from "@material-ui/core";
+import { Slider, Card, CardContent, Grid, Typography } from "@material-ui/core";
 
 import * as constants from "../common/constants";
 import dataFetcher from "../common/dataFetcher";

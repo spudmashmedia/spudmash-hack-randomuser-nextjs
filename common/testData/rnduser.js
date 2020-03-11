@@ -43,6 +43,8 @@ const single_user_expected_transform = [
   {
     id: "LJ 56 59 76 J",
     name: "Soham Bates",
+    username: "heavyzebra882",
+    password: "back",
     email: "soham.bates@example.com",
     phone: "016977 9909",
     location: "Glasgow, Herefordshire United Kingdom",
