@@ -11,7 +11,7 @@ A Next + React SPA app that demonstrates:
 - Material UI components
 - Jest Unit + Snapshot tests
 - Babel setup
-- ## Storybook Component testing
+- Storybook Component testing (w/ a11y testing)
 - Multistage Docker builds
 
 ## Prerequisite
