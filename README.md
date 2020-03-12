@@ -74,7 +74,7 @@ yarn test
 
 ## Open Storybook Component Library
 
-Storybook Component Library
+Storybook Component Library + the a11y addon is activated for accessibility testing.
 
 ```
 yarn storybook
