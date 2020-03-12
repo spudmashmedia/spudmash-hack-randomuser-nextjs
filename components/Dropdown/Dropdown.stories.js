@@ -14,10 +14,12 @@ import {
 import CheckBox from "@material-ui/icons/CheckBox";
 import Dropdown from "./Dropdown";
 import * as constants from "../../common/constants";
+import { withA11y } from '@storybook/addon-a11y';
 
 export default {
   component: Dropdown,
   title: "Dropdown",
+  decorators: [withA11y],
   excludeStories: /.*Data$/
 };
 

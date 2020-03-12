@@ -7,6 +7,7 @@ exports[`Profile Component Snapshot Test renders correctly 1`] = `
     aria-haspopup={true}
     className="MuiButtonBase-root MuiButton-root MuiButton-text"
     disabled={false}
+    id="btn-77116352"
     onBlur={[Function]}
     onClick={[Function]}
     onDragLeave={[Function]}
@@ -20,6 +21,7 @@ exports[`Profile Component Snapshot Test renders correctly 1`] = `
     onTouchMove={[Function]}
     onTouchStart={[Function]}
     tabIndex={0}
+    title="77116352:[Marc Van Breemen]"
     type="button"
   >
     <span
@@ -27,6 +29,13 @@ exports[`Profile Component Snapshot Test renders correctly 1`] = `
     >
       <div
         className="MuiAvatar-root MuiAvatar-circle"
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+        style={
+          Object {
+            "transform": "perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)",
+          }
+        }
       >
         <img
           alt="Marc Van Breemen"

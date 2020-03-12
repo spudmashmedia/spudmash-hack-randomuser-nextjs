@@ -25,6 +25,7 @@
     "next": "9.2.2",
     "react": "16.13.0",
     "react-dom": "16.13.0",
+    "react-spring": "^8.0.27",
     "swr": "^0.1.18",
     "uuid": "^7.0.2"
   },
@@ -33,6 +34,7 @@
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
     "@storybook/addon-a11y": "^5.3.14",
+    "@storybook/addon-knobs": "^5.3.14",
     "@storybook/react": "^5.3.14",
     "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",

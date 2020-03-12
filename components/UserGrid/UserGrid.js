@@ -36,7 +36,7 @@ let UserGrid = props => {
       <Grid container justify="center" spacing={1}>
         {userData.map(userItem => (
           <Grid key={`${userItem.id}-${uuidv1()}`} item>
-            <Profile data={userItem} />
+            <Profile data={userItem} springSize={1.5} />
           </Grid>
         ))}
       </Grid>

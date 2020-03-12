@@ -5,10 +5,12 @@
 
 import React from "react";
 import LoadingWidget from "./LoadingWidget";
+import { withA11y } from '@storybook/addon-a11y';
 
 export default {
   component: LoadingWidget,
   title: "LoadingWidget",
+  decorator: [withA11y],
   excludeStories: /.*Data$/,
 };
 

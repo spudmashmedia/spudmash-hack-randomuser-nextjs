@@ -4,34 +4,38 @@ exports[`ErrorWidget Component Snapshot Test renders correctly 1`] = `
 <div
   className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
 >
-  <li
-    className="MuiListItem-root MuiListItem-gutters"
-    disabled={false}
+  <ul
+    className="MuiList-root MuiList-padding"
   >
-    <div
-      className="MuiListItemIcon-root"
+    <li
+      className="MuiListItem-root MuiListItem-gutters"
+      disabled={false}
     >
-      <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root MuiSvgIcon-colorError"
-        focusable="false"
-        role="presentation"
-        viewBox="0 0 24 24"
+      <div
+        className="MuiListItemIcon-root"
       >
-        <path
-          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
-        />
-      </svg>
-    </div>
-    <div
-      className="MuiListItemText-root"
-    >
-      <span
-        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1"
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiSvgIcon-colorError"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+          />
+        </svg>
+      </div>
+      <div
+        className="MuiListItemText-root"
       >
-        Something went wrong..
-      </span>
-    </div>
-  </li>
+        <span
+          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1"
+        >
+          Something went wrong..
+        </span>
+      </div>
+    </li>
+  </ul>
 </div>
 `;

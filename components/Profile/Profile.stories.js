@@ -5,10 +5,13 @@
 
 import React from "react";
 import Profile from "./Profile";
+import { withA11y } from "@storybook/addon-a11y";
+import { withKnobs, number } from "@storybook/addon-knobs";
 
 export default {
   component: Profile,
   title: "Profile",
+  decorators: [withA11y, withKnobs],
   excludeStories: /.*Data$/
 };
 
@@ -25,4 +28,21 @@ export const actionData = {
   image_lrg: "https://randomuser.me/api/portraits/men/65.jpg"
 };
 
-export const Default = () => <Profile id={actionData.id} data={actionData} />;
+let setupSpringSizeKnob = () => {
+  const label = "Spring Size";
+  const defaultValue = 1.5;
+  const options = {
+    range: true,
+    min: 1,
+    max: 10,
+    step: 0.1
+  };
+  const groupId = "GROUP-ID1";
+
+  return number(label, defaultValue, options, groupId);
+};
+
+export const Default = () => {
+  const springSize = setupSpringSizeKnob();
+  return <Profile data={actionData} springSize={springSize} />;
+};

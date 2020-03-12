@@ -5,10 +5,12 @@
 
 import React from "react";
 import UserGrid from "./UserGrid";
+import { withA11y } from '@storybook/addon-a11y';
 
 export default {
   component: UserGrid,
   title: "UserGrid",
+  decorators: [withA11y],
   excludeStories: /.*Data$/
 };
 

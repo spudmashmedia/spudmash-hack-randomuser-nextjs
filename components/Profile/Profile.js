@@ -22,9 +22,9 @@ import Phone from "@material-ui/icons/Phone";
 import Mail from "@material-ui/icons/Mail";
 import LocationCity from "@material-ui/icons/LocationCity";
 import Person from "@material-ui/icons/Person";
-
 import { makeStyles } from "@material-ui/core/styles";
 import PopupState, { bindTrigger, bindPopover } from "material-ui-popup-state";
+import { useSpring, animated } from "react-spring";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -43,16 +43,44 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+// NOTE: for react-spring to work, need to wrap the target component with "animated" hoc
+const AnimatedAvatar = animated(Avatar);
+
 let Profile = props => {
   const classes = useStyles();
-  const { data } = props;
+  const { data, springSize } = props;
+
+  const calc = (x, y) => [
+    -(y - window.innerHeight / 2) / 20,
+    (x - window.innerWidth / 2) / 20,
+    springSize ? springSize : 1.1
+  ];
+  const trans = (x, y, s) =>
+    `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+
+  const [springState, setSpringState] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: { mass: 5, tension: 350, friction: 40 }
+  }));
 
   return (
     <PopupState variant="popover" popupId={data.id}>
       {popupState => (
         <div>
-          <Button {...bindTrigger(popupState)}>
-            <Avatar alt={data.name} src={data.image_thumb} />
+          <Button
+            id={`btn-${data.id}`}
+            title={`${data.id}:[${data.name}]`}
+            {...bindTrigger(popupState)}
+          >
+            <AnimatedAvatar
+              alt={data.name}
+              src={data.image_thumb}
+              onMouseMove={({ clientX: x, clientY: y }) =>
+                setSpringState({ xys: calc(x, y) })
+              }
+              onMouseLeave={() => setSpringState({ xys: [0, 0, 1] })}
+              style={{ transform: springState.xys.interpolate(trans) }}
+            />
           </Button>
           <Popover
             {...bindPopover(popupState)}

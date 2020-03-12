@@ -65,6 +65,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           aria-haspopup={true}
           className="MuiButtonBase-root MuiButton-root MuiButton-text"
           disabled={false}
+          id="btn-15667689-X"
           onBlur={[Function]}
           onClick={[Function]}
           onDragLeave={[Function]}
@@ -78,6 +79,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="15667689-X:[Angela Moya]"
           type="button"
         >
           <span
@@ -85,6 +87,13 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           >
             <div
               className="MuiAvatar-root MuiAvatar-circle"
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+              style={
+                Object {
+                  "transform": "perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)",
+                }
+              }
             >
               <img
                 alt="Angela Moya"
@@ -105,6 +114,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           aria-haspopup={true}
           className="MuiButtonBase-root MuiButton-root MuiButton-text"
           disabled={false}
+          id="btn-2NNaN36732140 24"
           onBlur={[Function]}
           onClick={[Function]}
           onDragLeave={[Function]}
@@ -118,6 +128,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="2NNaN36732140 24:[Ambre Deschamps]"
           type="button"
         >
           <span
@@ -125,6 +136,13 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           >
             <div
               className="MuiAvatar-root MuiAvatar-circle"
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+              style={
+                Object {
+                  "transform": "perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)",
+                }
+              }
             >
               <img
                 alt="Ambre Deschamps"
@@ -145,6 +163,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           aria-haspopup={true}
           className="MuiButtonBase-root MuiButton-root MuiButton-text"
           disabled={false}
+          id="btn-991228915"
           onBlur={[Function]}
           onClick={[Function]}
           onDragLeave={[Function]}
@@ -158,6 +177,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="991228915:[Andrew Young]"
           type="button"
         >
           <span
@@ -165,6 +185,13 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           >
             <div
               className="MuiAvatar-root MuiAvatar-circle"
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+              style={
+                Object {
+                  "transform": "perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)",
+                }
+              }
             >
               <img
                 alt="Andrew Young"
@@ -185,6 +212,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           aria-haspopup={true}
           className="MuiButtonBase-root MuiButton-root MuiButton-text"
           disabled={false}
+          id="btn-64857192-J"
           onBlur={[Function]}
           onClick={[Function]}
           onDragLeave={[Function]}
@@ -198,6 +226,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="64857192-J:[Miguel Nieto]"
           type="button"
         >
           <span
@@ -205,6 +234,13 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           >
             <div
               className="MuiAvatar-root MuiAvatar-circle"
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+              style={
+                Object {
+                  "transform": "perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)",
+                }
+              }
             >
               <img
                 alt="Miguel Nieto"
@@ -225,6 +261,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           aria-haspopup={true}
           className="MuiButtonBase-root MuiButton-root MuiButton-text"
           disabled={false}
+          id="btn-77116352"
           onBlur={[Function]}
           onClick={[Function]}
           onDragLeave={[Function]}
@@ -238,6 +275,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="77116352:[Marc Van Breemen]"
           type="button"
         >
           <span
@@ -245,6 +283,13 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           >
             <div
               className="MuiAvatar-root MuiAvatar-circle"
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+              style={
+                Object {
+                  "transform": "perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)",
+                }
+              }
             >
               <img
                 alt="Marc Van Breemen"
@@ -265,6 +310,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           aria-haspopup={true}
           className="MuiButtonBase-root MuiButton-root MuiButton-text"
           disabled={false}
+          id="btn-00000001"
           onBlur={[Function]}
           onClick={[Function]}
           onDragLeave={[Function]}
@@ -278,6 +324,7 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="00000001:[Not A Real Guy]"
           type="button"
         >
           <span
@@ -285,6 +332,13 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
           >
             <div
               className="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+              style={
+                Object {
+                  "transform": "perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)",
+                }
+              }
             >
               <svg
                 aria-hidden="true"

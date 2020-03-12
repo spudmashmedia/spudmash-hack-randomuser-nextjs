@@ -5,10 +5,12 @@
 
 import React from "react";
 import ErrorWidget from "./ErrorWidget";
+import { withA11y } from "@storybook/addon-a11y";
 
 export default {
   component: ErrorWidget,
   title: "ErrorWidget",
+  decorators: [withA11y],
   excludeStories: /.*Data$/
 };
 

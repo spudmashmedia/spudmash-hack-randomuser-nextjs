@@ -6,12 +6,24 @@ A Next + React SPA app that demonstrates:
 
 - NextJS + React usage
 - Next SWR
+- React-Spring
 - Integration with randomuser.me/api
 - Material UI components
 - Jest Unit + Snapshot tests
 - Babel setup
-- Storybook Component testing
+- ## Storybook Component testing
 - Multistage Docker builds
+
+## Prerequisite
+
+Please have the following installed:
+
+| Ref                          | Url                                                     |
+| ---------------------------- | ------------------------------------------------------- |
+| Node LTS (use nvm) Linux/Mac | https://github.com/nvm-sh/nvm/releases.                 |
+| Node LTS (use nvm) Windows   | https://github.com/coreybutler/nvm-windows/releases     |
+| yarn                         | https://classic.yarnpkg.com/en/docs/install/#mac-stable |
+| docker                       | https://docs.docker.com/install/                        |
 
 ## Getting Started
 
@@ -70,11 +82,18 @@ yarn storybook
 
 ## References
 
-| Ref                          | Url                                                              |
-| ---------------------------- | ---------------------------------------------------------------- |
-| NextJS                       | https://nextjs.org/                                              |
-| SWR remote data fetching     | https://github.com/zeit/swr                                      |
-| ReactJS                      | https://reactjs.org/                                             |
-| Material UI React Components | https://material-ui.com/                                         |
-| Storybook                    | https://storybook.js.org/                                        |
-| Docker multistage            | https://docs.docker.com/develop/develop-images/multistage-build/ |
+| Ref                          | Url                                                               |
+| ---------------------------- | ----------------------------------------------------------------- |
+| Node LTS (use nvm) Linux/Mac | https://github.com/nvm-sh/nvm/releases.                           |
+| Node LTS (use nvm) Windows   | https://github.com/coreybutler/nvm-windows/releases               |
+| yarn                         | https://classic.yarnpkg.com/en/docs/install/#mac-stable           |
+| docker                       | https://docs.docker.com/install/                                  |
+| NextJS                       | https://nextjs.org/                                               |
+| SWR remote data fetching     | https://github.com/zeit/swr                                       |
+| ReactJS                      | https://reactjs.org/                                              |
+| Material UI React Components | https://material-ui.com/                                          |
+| React Spring                 | https://www.react-spring.io/docs/hooks/use-spring                 |
+| Storybook                    | https://storybook.js.org/                                         |
+| Storybook a11y addon         | https://github.com/storybookjs/storybook/tree/master/addons/a11y  |
+| Storybook knobs addon        | https://github.com/storybookjs/storybook/tree/master/addons/knobs |
+| Docker multistage            | https://docs.docker.com/develop/develop-images/multistage-build/  |
