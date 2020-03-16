@@ -25,6 +25,13 @@ Please have the following installed:
 | yarn                         | https://classic.yarnpkg.com/en/docs/install/#mac-stable |
 | docker                       | https://docs.docker.com/install/                        |
 
+NOTE: for Windows users, please use a terminal that supports Linux commands. Here are a few
+| App | Url|
+|---| ---|
+|Cmder | https://cmder.net/|
+|Windows Subsystem|https://docs.microsoft.com/en-us/windows/wsl/install-win10|
+
+
 ## Getting Started
 
 After cloning, run:
@@ -97,3 +104,5 @@ yarn storybook
 | Storybook a11y addon         | https://github.com/storybookjs/storybook/tree/master/addons/a11y  |
 | Storybook knobs addon        | https://github.com/storybookjs/storybook/tree/master/addons/knobs |
 | Docker multistage            | https://docs.docker.com/develop/develop-images/multistage-build/  |
+|Cmder | https://cmder.net/|
+|Windows Subsystem|https://docs.microsoft.com/en-us/windows/wsl/install-win10|
