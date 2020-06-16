@@ -15,10 +15,9 @@ exports[`ErrorWidget Component Snapshot Test renders correctly 1`] = `
         className="MuiListItemIcon-root"
       >
         <svg
-          aria-hidden="true"
+          aria-hidden={true}
           className="MuiSvgIcon-root MuiSvgIcon-colorError"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -30,7 +29,7 @@ exports[`ErrorWidget Component Snapshot Test renders correctly 1`] = `
         className="MuiListItemText-root"
       >
         <span
-          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1"
+          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
         >
           Something went wrong..
         </span>

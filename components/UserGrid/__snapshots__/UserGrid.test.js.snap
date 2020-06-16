@@ -341,10 +341,9 @@ exports[`UserGrid Component Snapshot Test renders correctly - with data 1`] = `
               }
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root MuiAvatar-fallback"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
